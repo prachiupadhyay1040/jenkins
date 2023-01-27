@@ -38,19 +38,19 @@ Jenkins is replaced Hudson Since February 8, 2017 in eclipse.
 ## Installation of Jenkins by following the below document:
 https://phoenixnap.com/kb/install-jenkins-ubuntu
 
-sudo apt update
-sudo apt install openjdk-11-jdk -y
-curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+sudo apt update</br>
+sudo apt install openjdk-11-jdk -y</br>
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null</br>
 
-echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null</br>
 
-sudo apt update
-sudo apt install jenkins -y
-sudo systemctl status jenkins
-sudo systemctl enable --now jenkins
-sudo ufw allow 8080
-sudo ufw status
-sudo ufw enable
+sudo apt update</br>
+sudo apt install jenkins -y</br>
+sudo systemctl status jenkins</br>
+sudo systemctl enable --now jenkins</br>
+sudo ufw allow 8080</br>
+sudo ufw status</br>
+sudo ufw enable</br>
 
 ## Open a web browser, and navigate to your server' IP address. Use the following syntax:
 http://ip_address_or_domain:8080
@@ -61,20 +61,20 @@ http://localhost:8080
 A page opens prompting you to Unlock Jenkins. Obtain the required administrator password in the next step.
 
 * Obtain the default Jenkins unlock password by opening the terminal and running the following command:
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword</br>
 Obtaining the Jenkins administrator password.
 
 * The system returns an alphanumeric code. Enter that code in the Administrator password field and click Continue.
 
 * The setup prompts to either Install suggested plugins or Select plugins to install. It’s fine to simply install the suggested plugins.
-Customizing Jenkins plugins after installation.
+Customizing Jenkins plugins after installation.</br>
 You can always install more plugins later. The system continues the initial Jenkins setup.
 
 * The next step is the Create First Admin User. Enter the credentials you want to use for your Jenkins administrator, then click Save and Continue.
-Creating the first admin user in Jenkins.
+Creating the first admin user in Jenkins./br>
 
 * After this, you should set up the Instance Configuration. This is the preferred network address for this Jenkins installation. Confirm the address you want to use for your server. This is most likely the same address you used to get to this configuration page.
-Configure the Jenkins instance.
+Configure the Jenkins instance.</br>
 Once you specify the Jenkins URL, click Save and Finish.
 
 * You should see a page that says Jenkins is ready! Click Start using Jenkins to open the Jenkins dashboard.
