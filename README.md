@@ -80,3 +80,10 @@ Once you specify the Jenkins URL, click Save and Finish.
 * You should see a page that says Jenkins is ready! Click Start using Jenkins to open the Jenkins dashboard.
 Complete Jenkins configuration on Ubuntu.
 
+## How to Reset Jenkins Admin users Password
+sudo vi /var/lib/jenkins/config.xml</br>
+<useSecurity>true</useSecurity> </br>
+Press i to enter VIM’s insert mode. Modify the value between the <useSecurity> tags and set the value to false.</br>
+<useSecurity>false</useSecurity>
+
+       
